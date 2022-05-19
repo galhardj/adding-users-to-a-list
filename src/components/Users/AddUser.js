@@ -57,6 +57,7 @@ const AddUser = (props) => {
       <Card classes={styles.input}>
         <form onSubmit={submitHandler}>
           <label htmlFor="username">Username</label>
+          {/* 'ref' attribute is so the respective useRef can read the respective input field */}
           <input id="username" type="text" ref={enteredRefName}></input>
           <label htmlFor="age">Age (Years)</label>
           <input id="age" type="number" ref={enteredRefAge}></input>
